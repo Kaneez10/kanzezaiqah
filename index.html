@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kanz e Zaiqah - Har Zaiqah Ek Shahi Safar. Order exotic chicken biryanis online. Contact: 9663227334">
   <title>Kanz e Zaiqah</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
+  <!-- Styles -->
+  <style>
     body {
       margin: 0;
       font-family: 'Playfair Display', serif;
@@ -83,11 +86,18 @@
       font-family: 'Great Vibes', cursive;
     }
 
+    .description {
+      font-size: 1rem;
+      margin: 0.5rem 0 1rem;
+      color: #4b2e2e;
+      line-height: 1.5;
+    }
+
     .price {
       font-weight: bold;
-      margin: 1rem 0;
+      margin: 0.5rem 0;
       color: #4b2e2e;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
 
     a button {
@@ -120,6 +130,19 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
+    .bestseller {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #e63946;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
     .note {
       text-align: center;
       font-style: italic;
@@ -137,6 +160,19 @@
       font-size: 1rem;
       letter-spacing: 1px;
     }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      .card-content h3 {
+        font-size: 1.7rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -147,70 +183,95 @@
   </header>
 
   <div class="container">
-    <h2>Our Exotic Chicken Biryani Flavours</h2>
+    <h2>Our Exotic Biryani Flavours</h2>
     <div class="flavours">
 
+      <!-- Tandoori Biryani -->
       <div class="card">
         <div class="halal">Halal</div>
+        <div class="bestseller">Bestseller</div>
         <div class="card-content">
-          <h3>Kanz Special Biryani</h3>
-          <p class="price">Half kilograms: ₹700 | Full: ₹1300</p>
-          <a href="https://wa.me/919663227334?text=I%20would%20like%20to%20order%20Kolkata%20Special%20Biryani" target="_blank">
+          <h3>Tandoori Biryani</h3>
+          <p class="description">
+            Tender tandoori chicken layered with fragrant basmati rice, infused with smoky charcoal flavours, saffron, and royal spices. Most loved.
+          </p>
+          <p class="price">Quarter: ₹259 | Half (4 pcs): ₹699 | Full (8 pcs): ₹1299</p>
+          <a href="https://wa.me/919663227334?text=I%20would%20like%20to%20order%20Tandoori%20Biryani" target="_blank">
             <button>Order Now</button>
           </a>
         </div>
       </div>
 
+      <!-- Mughlai Biryani -->
+      <div class="card">
+        <div class="halal">Halal</div>
+        <div class="card-content">
+          <h3>Mughlai Royal Biryani</h3>
+          <p class="description">
+            Fragrant basmati rice slow-cooked with rich Mughlai spices, tender chicken/mutton, saffron and ghee, layered with golden caramelised onions, cashews, raisins, and a hint of kewra essence. A royal, nutty, and aromatic feast straight from the Mughal kitchens.
+          </p>
+          <p class="price">Quarter: ₹279 | Half: ₹750 | Full (1 whole chicken): ₹1500</p>
+          <a href="https://wa.me/919663227334?text=I%20would%20like%20to%20order%20Mughlai%20Biryani" target="_blank">
+            <button>Order Now</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hyderabadi Dum Biryani -->
       <div class="card">
         <div class="halal">Halal</div>
         <div class="card-content">
           <h3>Hyderabadi Dum Biryani</h3>
-          <p class="price">Half kilograms: ₹700 | Full: ₹1300</p>
+          <p class="description">
+            Long-grain basmati rice and marinated chicken/mutton sealed and slow-cooked on dum with yogurt, saffron, fried onions, mint, green chilies, and a robust blend of Hyderabadi spices. Rich, aromatic, and layered to perfection in true Nizami style.
+          </p>
+          <p class="price">Half: ₹700 | Full: ₹1300</p>
           <a href="https://wa.me/919663227334?text=I%20would%20like%20to%20order%20Hyderabadi%20Dum%20Biryani" target="_blank">
             <button>Order Now</button>
           </a>
         </div>
       </div>
 
+      <!-- Lucknowi Awadhi Biryani -->
       <div class="card">
         <div class="halal">Halal</div>
         <div class="card-content">
           <h3>Lucknowi Awadhi Biryani</h3>
-          <p class="price">Half kilograms: ₹700 | Full: ₹1300</p>
+          <p class="description">
+            Elegant, subtle, and refined. Soft meat and delicate aromas for the connoisseur.
+          </p>
+          <p class="price">Quarter: ₹249 | Half: ₹699 | Full: ₹1299</p>
           <a href="https://wa.me/919663227334?text=I%20would%20like%20to%20order%20Lucknowi%20Awadhi%20Biryani" target="_blank">
             <button>Order Now</button>
           </a>
         </div>
       </div>
 
+      <!-- Malabar Biryani -->
       <div class="card">
         <div class="halal">Halal</div>
         <div class="card-content">
           <h3>Malabar Biryani</h3>
-          <p class="price">Half kilograms: ₹700 | Full: ₹1300</p>
+          <p class="description">
+            Coconut-kissed rice, tender meat, and a symphony of cardamom, cloves, and black pepper—tropical warmth in every bite.
+          </p>
+          <p class="price">Quarter: ₹259 | Half: ₹700 | Full: ₹1300</p>
           <a href="https://wa.me/919663227334?text=I%20would%20like%20to%20order%20Malabar%20Biryani" target="_blank">
             <button>Order Now</button>
           </a>
         </div>
       </div>
 
+      <!-- Paneer Delight Biryani -->
       <div class="card">
         <div class="halal">Halal</div>
         <div class="card-content">
-          <h3>Mughlai Royal Biryani</h3>
-          <p class="price">Half kilograms: ₹750 | Full(one kilogram): ₹1400</p>
-          <a href="https://wa.me/919663227334?text=I%20would%20like%20to%20order%20Mughlai%20Royal%20Biryani" target="_blank">
-            <button>Order Now</button>
-          </a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="halal">Halal</div>
-        <div class="card-content">
-          <h3>Veggie Delight Biryani</h3>
-          <p class="price">Half kilograms: ₹650 | Full: ₹1200</p>
-          <a href="https://wa.me/919663227334?text=I%20would%20like%20to%20order%20Veggie%20Delight%20Biryani" target="_blank">
+          <h3>Paneer Delight Biryani</h3>
+          <p class="description">
+            Colorful vegetables, paneer, baby corn, and broccoli, layered with aromatic basmati rice, fried onions, cashews, raisins, and a whisper of saffron—luxury without compromise.
+          </p>
+          <p class="price">Half: ₹659 | Full: ₹1299</p>
+          <a href="https://wa.me/919663227334?text=I%20would%20like%20to%20order%20Paneer%20Delight%20Biryani" target="_blank">
             <button>Order Now</button>
           </a>
         </div>
@@ -219,8 +280,8 @@
     </div>
 
     <p class="note">
-      Note: All biryanis listed above are chicken. For other variants, contact us at 9663227334.<br>
-      Pre-orders are accepted only if placed at least 5 hours in advance.
+      Delivery might take up to 2 hours.<br>
+      Half kg feeds 3 adults | Full feeds 7 adults.
     </p>
   </div>
 
@@ -230,4 +291,5 @@
 
 </body>
 </html>
+
 
